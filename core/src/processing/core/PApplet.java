@@ -269,6 +269,36 @@ public class PApplet extends Applet
 
   Method revalidateMethod;
 
+  // Code for Minnowboard
+  private File ledDir;
+  private void setLedDir(String ledDir) {
+      this.ledDir = new File(ledDir);
+  }
+  
+  public void pinMode(int pin, int mode){
+      setLedDir(LED[pin - D11]);
+      File ledFile;
+      ledFile = new File(ledDir,"trigger");
+      try {
+          PrintStream temp = new PrintStream(ledFile, "UTF-8");
+          temp.print(TRIGGER[0]);
+      } catch (IOException e) {
+          System.err.println(e);
+      }
+  }
+  
+  public void digitalWrite(int pin, int value) {
+      setLedDir(LED[pin - D11]);
+      File ledFile;
+      ledFile = new File(ledDir,"brightness");
+      try {
+          PrintStream temp = new PrintStream(ledFile, "UTF-8");
+          temp.print(value);
+      } catch (IOException e) {
+          System.err.println(e);
+      }
+  }
+  // End of code for Minnowboard  
 
 //  /**
 //   * Usually just 0, but with multiple displays, the X and Y coordinates of

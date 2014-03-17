@@ -765,7 +765,7 @@
       <arg value="linux/work" />
       <arg value="-xzpf" />
       -->
-      <arg value="xfz" />
+      <arg value="xzf" />
       <arg value="jre.tgz"/>
     </exec>
 

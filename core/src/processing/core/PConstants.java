@@ -509,4 +509,22 @@ public interface PConstants {
     "Too many calls to pushMatrix().";
   static final String ERROR_PUSHMATRIX_UNDERFLOW =
     "Too many calls to popMatrix(), and not enough to pushMatrix().";
+
+  /**
+   * Minnowboard constants
+   */
+  static final int OUTPUT  = 0;
+  static final int INPUT   = 1;
+  static final int D11     = 11;
+  static final int D12     = 12;
+  static final String[] LED = {
+      "/sys/class/leds/minnow_led0/",
+      "/sys/class/leds/minnow_led1/"
+  };
+  static final int HIGH    = 1;
+  static final int LOW     = 0;
+  static final String[] TRIGGER = {
+      "none", "mmc0", "mmc1", "timer", "oneshot", "heartbeat",
+      "backlight", "gpio", "cpu0", "cpu1", "default-on"
+  };
 }

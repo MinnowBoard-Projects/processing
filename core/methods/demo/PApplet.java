@@ -9481,3 +9481,7 @@ public class PApplet extends Applet
     g.blend(src, sx, sy, sw, sh, dx, dy, dw, dh, mode);
   }
 }
+
+public void pinMode(int pin, int mode) {
+   int a = pin;
+}

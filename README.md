@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 Processing
 ==========
 
@@ -30,3 +31,9 @@ and [patches](https://github.com/processing/processing/pulls).
 
 Ben Fry, 3 February 2013  
 Last updated 21 April 2013
+=======
+processing
+==========
+
+processing
+>>>>>>> bbe182acad845b4b1046f117adb3f1006e9dd366
