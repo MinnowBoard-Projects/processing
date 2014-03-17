@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 Minnowboard
 ==========
 
@@ -23,12 +22,4 @@ and [patches](https://github.com/minnowboard/processing/pulls).
 
 Roberto Burgos, 17 March 2014
 Last updated 17 March 2014
-=======
->>>>>>> bbe182acad845b4b1046f117adb3f1006e9dd366
-processing
-==========
-
-processing
-<<<<<<< HEAD
->>>>>>> bbe182acad845b4b1046f117adb3f1006e9dd366
 =======
